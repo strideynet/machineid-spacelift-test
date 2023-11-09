@@ -8,4 +8,4 @@ stack_defaults:
     - echo "/mnt/workspace/source"
     - ls /mnt/workspace/source
     - stat /mnt/workspace/source/tbot
-    - /mnt/workspace/source/tbot start --auth-server leaf.tele.ottr.sh:443 --token spacelift-test --destination-dir=/mnt/workspace/tbot-out --data-dir=memory:// --oneshot
+    - "/mnt/workspace/source/tbot start --auth-server leaf.tele.ottr.sh:443 --token spacelift-test --destination-dir=/mnt/workspace/tbot-out --data-dir=memory:// --oneshot"
