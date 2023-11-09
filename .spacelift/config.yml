@@ -9,5 +9,6 @@ stack_defaults:
     - ls /mnt/workspace/source
     - echo "running stat /mnt/workspace/source/tbot"
     - stat /mnt/workspace/source/tbot
-    - echo "running file /mnt/workspace/source/tbot"
+    - cat /proc/sys/kernel/osrelease
+    - echo "running /mnt/workspace/source/tbot"
     - /mnt/workspace/source/tbot start --auth-server leaf.tele.ottr.sh:443 --token spacelift-test --destination-dir=/mnt/workspace/tbot-out --data-dir=memory:// --oneshot
