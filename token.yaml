@@ -1,0 +1,14 @@
+kind: token
+version: v2
+metadata:
+  name: spacelift-test
+spec:
+  roles: [Bot]
+  join_method: spacelift
+  bot_name: spacelift-test
+  spacelift:
+    hostname: teleport-noah-dev.app.spacelift.io
+    allow:
+      - space_id: root
+        caller_type: stack
+        caller_id: machineid-spacelift-test

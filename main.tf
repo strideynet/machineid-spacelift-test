@@ -10,7 +10,7 @@ terraform {
 provider "teleport" {
   # Update addr to point to your Teleport Cloud tenant URL's host:port
   addr               = "leaf.tele.ottr.sh:443"
-  identity_file_path = "terraform-identity"
+  identity_file_path = "/mnt/workspace/tbot-out/identity"
 }
 
 resource "teleport_role" "machineid-spacelift-test" {
