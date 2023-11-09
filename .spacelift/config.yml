@@ -1,13 +1,4 @@
 version: "1"
 stack_defaults:
   before_init:
-    - echo "ls"
-    - ls
-    - echo "/mnt/workspace"
-    - ls /mnt/workspace
-    - echo "/mnt/workspace/source"
-    - ls /mnt/workspace/source
-    - echo "running stat /mnt/workspace/source/tbot"
-    - stat /mnt/workspace/source/tbot
-    - echo "running /mnt/workspace/source/tbot"
     - /mnt/workspace/source/tbot start --auth-server leaf.tele.ottr.sh:443 --join-method spacelift --token spacelift-test --destination-dir=/mnt/workspace/tbot-out --data-dir=memory:// --oneshot
