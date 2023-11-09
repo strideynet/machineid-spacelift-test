@@ -1,7 +1,10 @@
 version: "1"
 stack_defaults:
   before_init:
+    - echo "ls /proc"
     - ls /proc
+    - echo "ls /proc/sys"
     - ls /proc/sys
+    - echo "ls /proc/sys/kernel"
     - ls /proc/sys/kernel
     - /mnt/workspace/source/tbot-glibc-dynamic start --auth-server leaf.tele.ottr.sh:443 --join-method spacelift --token spacelift-test --destination-dir=/mnt/workspace/tbot-out --data-dir=memory:// --oneshot
